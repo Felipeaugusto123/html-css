@@ -12,15 +12,33 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         .num{
@@ -42,10 +60,11 @@
                 TR, TD , TH
     -->
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,10 +179,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habutantes</th>
+                <th scope="row">Total de Habutantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit excepturi quam sed ipsa, earum veritatis placeat doloremque, corrupti perferendis, voluptatum officiis vero saepe. Impedit repellendus dolor optio animi mollitia nisi!</p>
 </body>
 </html>

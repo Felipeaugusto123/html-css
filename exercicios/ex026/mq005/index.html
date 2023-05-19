@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu ()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, qui velit quo illo non neque mollitia eligendi, aut eos in ipsam quae vero, accusantium saepe at itaque ad? Doloremque, velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illo sed enim. Ab, placeat dolorem nisi eos aliquam corrupti eveniet velit dignissimos facilis dolorum! Vero, quisquam esse. Numquam, distinctio? Cumque.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur aliquam deserunt sed, consectetur blanditiis tempore hic, aut ea soluta eligendi delectus! Cupiditate quos enim quam illo incidunt aliquid fugit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat libero et iste atque unde, aperiam harum praesentium consectetur error mollitia dolor voluptatem! Consequuntur esse velit cumque modi voluptas quae ex!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nostrum atque neque, rem fuga quam autem nobis veritatis magni et perspiciatis quidem voluptatibus vel cum odit modi ea? Aliquam, quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ad? Hic nulla obcaecati nam consequatur tempore itaque odio! Perspiciatis ab ut, veniam ducimus minus numquam nesciunt alias obcaecati possimus quam?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
